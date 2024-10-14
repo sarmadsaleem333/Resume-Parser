@@ -32,9 +32,16 @@ def extract_phone(text):
     return phone_matches[0][0] if phone_matches else "Not Found"
 
 def extract_skills(text):
-    doc = nlp(text)
-    skills = [token.text for token in doc if token.pos_ == "NOUN"]
-    return list(set(skills))  # Remove duplicates
+    # Search for the keyword 'skills' and extract the following skills
+    skills_section_pattern = r'skills?\s*[:\n]*(.*?)(?=\n[A-Z]|$)'  # Match 'skills' followed by a list until next capitalized line or end
+    skills_section = re.search(skills_section_pattern, text, re.IGNORECASE)
+
+    if skills_section:
+        skills_text = skills_section.group(1)
+        # Split skills by commas or line breaks and clean whitespace
+        skills = [skill.strip() for skill in re.split(r'[,\n]+', skills_text) if skill.strip()]
+        return list(set(skills))  # Return unique skills
+    return []  # No skills found
 
 def extract_experience(text):
     experience = []
@@ -154,3 +161,5 @@ if __name__ == '__main__':
     parser = ResumeParserApp()
     parser.show()
     sys.exit(app.exec_())
+
+
