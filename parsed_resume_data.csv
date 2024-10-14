@@ -1,15 +1,16 @@
-Name,Email,Phone,Skills,Experience,"EDUCATION
- | Government College Lahore (GCU) (October 2020-July 2022)
-FSc Pre Engineering(BISE Lahore)
-Completed FSc at a prestigious institution, achieving 1061/1100 marks.
- | National University of Sciences & Technology(NUST) | Islamabad (Sept 2022-June"
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-Muhammad Sarmad Saleem,sarmadsaleem.333@gmail.com,+92-333-4070869,"C, C++, NextJS, Python, Java Hugging Face Transformers ReactJS","With a strong passion for problem-solving, I am fully committed to creating seamless user
+name,email,phone,skills,experience,education
+"Pakistan
+Git",abubakarimran1043@gmail.com,+92317-0447751,"Bootstrap, (Frameworks like React), HTML, Tailwind CSS, JavaScript, Material UI, Frontend : MERN STACK, CSS","Computer Science CGPA: 3.3
+Key Courses: Web Engineering, Object Oriented Programming, Data Structure and Algorithm, Database Systems, Digital Logic
+Designing, Computer Organization and Assembly Language, Linear Algebra
+EXPERIENCE:
+SoftPyramid (AI Intern) June 2024 - | CODSOFT (Web Developer Intern)","https://github.com/Abubakar-Imran Phone No: +92317-0447751
+LinkedIn: https://www.linkedin.com/in/abubakar-imran-/ Email: abubakarimran1043@gmail.com
+EDUCATION:
+National University of Sciences and Technology Sept 2022 - Present
+BS."
+Not Found,Not Found,Not Found,,,
+Muhammad Sarmad Saleem,sarmadsaleem.333@gmail.com,+92-333-4070869,"NextJS, C, Python, C++, Java Hugging Face Transformers ReactJS","With a strong passion for problem-solving, I am fully committed to creating seamless user
 experiences and driving innovation in the field of Machine Learning and development.
  | SKILLS
 Python,C,C++,Java Hugging Face Transformers ReactJS, NextJS
@@ -41,27 +42,3 @@ comprehensive coverage of relevant information.
  | Pioneered the initiative, as this was the first chatbot of its kind for NUST, enhancing accessibility and user
 experience for those unfamiliar with the university.
 "
-"Muneeb Ahmed
-Data Scientist
-Seeking",a.muneeb32@hotmail.com,+92) 3161717161,and a passion for data to drive data-driven decision-making,"WORK EXPERIENCE
-a.muneeb32@hotmail.com
-Manager
-Faisalabad
-Fitrise
-(+92) 3161717161 12/2023 - Present,
-Tasks
-Identifies new business opportunities, builds and maintains client relationships, and develops strategic
-Faisalabad, Pakistan
-sales plans.","linkedin.com/in/Muneeb- Reseacher Islamabad
-ahmed-a86424221
-Center of Excellence - Bahria University
-09/2022 - 10/2023,
-SKILLS
-Tasks
-Machine and Deep Learning Designed and implemented machine and deep-learning models for different programs and projects.
- | PROJECTS
-NEGATIVE EMOTIONS RECOGNITION USING fNIRS BASED CLASSIFICATION
-EDUCATION
- | Bahria University Comparative Analysis of the Performance for the Fine-tuned CNN using VGG16
-Convolutional Neural Networks is most commonly applied to analyze visual imagery, By recognizing valuable
-Islamabad, Pakistan features,using pretrained model VGG16 who can identify different objects in images."
