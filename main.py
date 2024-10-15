@@ -1,13 +1,37 @@
+
+
 import warnings
 warnings.filterwarnings("ignore")
 import os
+import pandas as pd
 import nltk
 nltk.download('stopwords')
 
 from pyresparser import ResumeParser    
 
-# Parse the resume and extract data
-data = ResumeParser(os.path.join(os.getcwd(), 'ResumeTalhaKhan.pdf')).get_extracted_data()
+def parse_resumes(resume_folder):
+    
+    resumes_data = []
+    
+    
+    for filename in os.listdir(resume_folder):
+        if filename.endswith('.pdf'):
+            resume_path = os.path.join(resume_folder, filename)
+            data = ResumeParser(resume_path).get_extracted_data()
+            data['filename'] = filename  
+            resumes_data.append(data)
 
-# Print the extracted data
-print(data)
+    return resumes_data
+
+resume_folder = os.path.join(os.getcwd(), 'resumes')
+
+extracted_data = parse_resumes(resume_folder)
+
+
+df = pd.DataFrame(extracted_data)
+
+
+output_csv = os.path.join(os.getcwd(), 'extracted_resumes.csv')
+df.to_csv(output_csv, index=False)
+
+print(f"Extracted data saved to {output_csv}")
