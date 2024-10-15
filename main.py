@@ -7,7 +7,7 @@ nltk.download('stopwords')
 from pyresparser import ResumeParser    
 
 # Parse the resume and extract data
-data = ResumeParser(os.path.join(os.getcwd(), 'Abubakar_Imran.pdf')).get_extracted_data()
+data = ResumeParser(os.path.join(os.getcwd(), 'ResumeTalhaKhan.pdf')).get_extracted_data()
 
 # Print the extracted data
 print(data)
