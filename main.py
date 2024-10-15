@@ -12,8 +12,6 @@ from pyresparser import ResumeParser
 def parse_resumes(resume_folder):
     
     resumes_data = []
-    
-    
     for filename in os.listdir(resume_folder):
         if filename.endswith('.pdf'):
             resume_path = os.path.join(resume_folder, filename)
@@ -34,4 +32,7 @@ df = pd.DataFrame(extracted_data)
 output_csv = os.path.join(os.getcwd(), 'extracted_resumes.csv')
 df.to_csv(output_csv, index=False)
 
+
 print(f"Extracted data saved to {output_csv}")
+
+
