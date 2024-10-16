@@ -14,17 +14,14 @@ def parse_resumes(resume_folder):
             resume_path = os.path.join(resume_folder, filename)
             data = ResumeParser(resume_path).get_extracted_data()
 
-            # Extract relevant fields (name, email, phone, and password)
             name = data.get('name', None)
             email = data.get('email', None)
             phone = data.get('mobile_number', None)
-            password = data.get('password', None)  # Assuming "password" exists in extracted data
+        
 
-            # Ensure phone number starts with '92'
             if phone and not phone.startswith('92'):
-                phone = '92' + phone.lstrip('0')  # Strip leading '0' and prepend '92'
+                phone = '92' + phone.lstrip('0')  
 
-            # Append only the relevant data
             resumes_data.append({
                 'name': name,
                 'email': email,
@@ -34,13 +31,13 @@ def parse_resumes(resume_folder):
 
     return resumes_data
 
-# Define resume folder path
+
 resume_folder = os.path.join(os.getcwd(), 'resumes')
 
-# Extract resume data
+
 extracted_data = parse_resumes(resume_folder)
 
-# Convert extracted data to DataFrame
+
 df = pd.DataFrame(extracted_data)
 
 # Save the extracted data to a CSV file
